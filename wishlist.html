@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Milo's Wishlist</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 30px 10px;
+            background: #8fa1b5;
+            color: #111111;
+            font-family: "MS Sans Serif", Arial, sans-serif;
+            font-size: 13px;
+        }
+
+        a {
+            color: #0000ee;
+        }
+
+        .website {
+            width: 760px;
+            max-width: 95%;
+            margin: 0 auto;
+            background: #d4d0c8;
+            border: 2px solid #ffffff;
+            border-right-color: #404040;
+            border-bottom-color: #404040;
+            box-shadow: 4px 4px 0 #222222;
+        }
+
+        .titlebar {
+            background: #000080;
+            color: white;
+            padding: 5px 8px;
+            font-weight: bold;
+        }
+
+        .titlebar span {
+            float: right;
+        }
+
+        .header {
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #808080;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-family: Georgia, serif;
+            font-size: 30px;
+        }
+
+        .nav {
+            padding: 8px;
+            text-align: center;
+            background: #c0c0c0;
+            border-bottom: 2px solid #808080;
+        }
+
+        .nav a {
+            display: inline-block;
+            margin: 3px;
+            padding: 4px 10px;
+            background: #d4d0c8;
+            border: 2px solid #ffffff;
+            border-right-color: #404040;
+            border-bottom-color: #404040;
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .content {
+            padding: 15px;
+        }
+
+        .box {
+            margin-bottom: 15px;
+            background: #eeeeee;
+            border: 1px solid #555555;
+        }
+
+        .box-title {
+            padding: 5px 8px;
+            background: #000080;
+            color: white;
+            font-weight: bold;
+        }
+
+        .box-content {
+            padding: 12px;
+        }
+
+        .wishlist-item {
+            display: grid;
+            grid-template-columns: 100px 1fr 100px;
+            gap: 12px;
+            align-items: center;
+            padding: 10px;
+            margin-bottom: 10px;
+            background: #ffffff;
+            border: 1px solid #777777;
+        }
+
+        .wishlist-image {
+            width: 100px;
+            height: 80px;
+            background: #c0c0c0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 11px;
+        }
+
+        .wishlist-name {
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .wishlist-price {
+            margin-top: 5px;
+        }
+
+        .wishlist-button {
+            display: inline-block;
+            padding: 6px 8px;
+            background: #d4d0c8;
+            border: 2px solid #ffffff;
+            border-right-color: #404040;
+            border-bottom-color: #404040;
+            color: #000000;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .footer {
+            padding: 12px;
+            text-align: center;
+            font-size: 11px;
+            border-top: 2px solid #808080;
+        }
+
+        @media (max-width: 600px) {
+            .wishlist-item {
+                grid-template-columns: 80px 1fr;
+            }
+
+            .wishlist-image {
+                width: 80px;
+                height: 70px;
+            }
+
+            .wishlist-button {
+                grid-column: 1 / -1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="website">
+
+    <div class="titlebar">
+        MILO'S WEBSITE - WISHLIST
+        <span>_ □ X</span>
+    </div>
+
+    <div class="header">
+        <h1>★ MY WISHLIST ★</h1>
+        <p>Things I would like to have.</p>
+    </div>
+
+    <div class="nav">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="wishlist.html">WISHLIST</a>
+        <a href="#">MUSIC</a>
+        <a href="#">FILES</a>
+    </div>
+
+    <div class="content">
+
+        <div class="box">
+
+            <div class="box-title">
+                🎁 WISHLIST
+            </div>
+
+            <div class="box-content">
+
+                <p>
+                    If you want to gift me something, you can find
+                    my current wishes below.
+                </p>
+
+                <div class="wishlist-item">
+
+                    <div class="wishlist-image">
+                        IMAGE
+                    </div>
+
+                    <div>
+                        <div class="wishlist-name">
+                            Example Item
+                        </div>
+
+                        <div class="wishlist-price">
+                            Price: €50
+                        </div>
+
+                        <div>
+                            Priority: ★★★☆☆
+                        </div>
+                    </div>
+
+                    <a class="wishlist-button" href="#" target="_blank">
+                        SHOP
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Visitor Counter: 000001<br>
+        Last updated: 2026
+    </div>
+
+</div>
+
+</body>
+</html>
