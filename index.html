@@ -7,6 +7,82 @@
     <title>Milo's Website</title>
 
     <style>
+       #intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #008080;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-window {
+    width: 500px;
+    max-width: 90%;
+    background: #c0c0c0;
+
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+
+    box-shadow: 5px 5px 0 #000000;
+}
+
+.intro-titlebar {
+    margin: 3px 3px 0;
+    padding: 5px 7px;
+
+    background: #000080;
+    color: white;
+
+    font-weight: bold;
+}
+
+.intro-content {
+    padding: 30px;
+    text-align: center;
+}
+
+.intro-content h1 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+}
+
+#enter-button {
+    margin-top: 15px;
+    padding: 8px 20px;
+
+    font-family: "MS Sans Serif", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+
+    background: #c0c0c0;
+
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #404040;
+    border-bottom: 2px solid #404040;
+
+    cursor: pointer;
+}
+
+#enter-button:active {
+    border-top: 2px solid #404040;
+    border-left: 2px solid #404040;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+.small-text {
+    margin-top: 20px;
+    font-size: 11px;
+}
         body 
         <div id="intro">
     <div class="intro-window">
@@ -300,6 +376,16 @@
     </div>
 
 </div>
+<script>
+    const enterButton = document.getElementById("enter-button");
+    const intro = document.getElementById("intro");
+    const music = document.getElementById("background-music");
 
+    enterButton.addEventListener("click", function() {
+        music.play();
+
+        intro.style.display = "none";
+    });
+</script>
 </body>
 </html>
