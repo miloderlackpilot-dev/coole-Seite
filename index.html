@@ -7,119 +7,7 @@
     <title>Milo's Website</title>
 
     <style>
-       #intro {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #008080;
-    z-index: 9999;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.intro-window {
-    width: 500px;
-    max-width: 90%;
-    background: #c0c0c0;
-
-    border-top: 2px solid #ffffff;
-    border-left: 2px solid #ffffff;
-    border-right: 2px solid #000000;
-    border-bottom: 2px solid #000000;
-
-    box-shadow: 5px 5px 0 #000000;
-}
-
-.intro-titlebar {
-    margin: 3px 3px 0;
-    padding: 5px 7px;
-
-    background: #000080;
-    color: white;
-
-    font-weight: bold;
-}
-
-.intro-content {
-    padding: 30px;
-    text-align: center;
-}
-
-.intro-content h1 {
-    font-family: Georgia, serif;
-    font-size: 28px;
-}
-
-#enter-button {
-    margin-top: 15px;
-    padding: 8px 20px;
-
-    font-family: "MS Sans Serif", Arial, sans-serif;
-    font-size: 13px;
-    font-weight: bold;
-
-    background: #c0c0c0;
-
-    border-top: 2px solid #ffffff;
-    border-left: 2px solid #ffffff;
-    border-right: 2px solid #404040;
-    border-bottom: 2px solid #404040;
-
-    cursor: pointer;
-}
-
-#enter-button:active {
-    border-top: 2px solid #404040;
-    border-left: 2px solid #404040;
-    border-right: 2px solid #ffffff;
-    border-bottom: 2px solid #ffffff;
-}
-
-.small-text {
-    margin-top: 20px;
-    font-size: 11px;
-}
-        body 
-        <div id="intro">
-    <div class="intro-window">
-
-        <div class="intro-titlebar">
-            MILO'S WEBSITE
-        </div>
-
-        <div class="intro-content">
-
-            <h1>★ WELCOME ★</h1>
-
-            <p>
-                You are about to enter Milo's website.
-            </p>
-
-            <p>
-                Click the button below to continue.
-            </p>
-
-            <button id="enter-button">
-                ENTER WEBSITE
-            </button>
-
-            <p class="small-text">
-                ♪ Please turn your volume on ♪
-            </p>
-
-        </div>
-
-    </div>
-</div>
-
-<audio id="background-music" loop>
-    <source src="musicmp3" type="audio/mpeg">
-</audio>
-        {
+        body {
             margin: 0;
             padding: 30px 10px;
             background: #8fa1b5;
@@ -131,10 +19,6 @@
         a {
             color: #0000ee;
             text-decoration: underline;
-        }
-
-        a:visited {
-            color: #551a8b;
         }
 
         .website {
@@ -265,127 +149,341 @@
                 font-size: 25px;
             }
         }
+
+
+        /* =====================================
+           ENTER SCREEN
+           ===================================== */
+
+        #intro {
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 100%;
+
+            background: #008080;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            z-index: 9999;
+        }
+
+        .intro-window {
+            width: 500px;
+            max-width: 90%;
+
+            background: #c0c0c0;
+
+            border-top: 2px solid #ffffff;
+            border-left: 2px solid #ffffff;
+            border-right: 2px solid #000000;
+            border-bottom: 2px solid #000000;
+
+            box-shadow: 5px 5px 0 #000000;
+        }
+
+        .intro-titlebar {
+            margin: 3px 3px 0;
+
+            padding: 5px 7px;
+
+            background: #000080;
+            color: white;
+
+            font-weight: bold;
+        }
+
+        .intro-content {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .intro-content h1 {
+            font-family: Georgia, serif;
+            font-size: 28px;
+        }
+
+        #enter-button {
+            margin-top: 15px;
+
+            padding: 8px 20px;
+
+            font-family: "MS Sans Serif", Arial, sans-serif;
+            font-size: 13px;
+            font-weight: bold;
+
+            background: #c0c0c0;
+
+            border-top: 2px solid #ffffff;
+            border-left: 2px solid #ffffff;
+            border-right: 2px solid #404040;
+            border-bottom: 2px solid #404040;
+
+            cursor: pointer;
+        }
+
+        #enter-button:active {
+            border-top: 2px solid #404040;
+            border-left: 2px solid #404040;
+            border-right: 2px solid #ffffff;
+            border-bottom: 2px solid #ffffff;
+        }
+
+        .small-text {
+            margin-top: 20px;
+            font-size: 11px;
+        }
     </style>
 </head>
 
+
 <body>
 
-<div class="website">
 
-    <div class="titlebar">
-        MILO'S WEBSITE
-        <span>_ □ X</span>
-    </div>
+    <!-- =====================================
+         ENTER SCREEN
+         ===================================== -->
 
-    <div class="header">
-        <h1>★ MILO ★</h1>
-        <p>Welcome to my little corner of the internet.</p>
-    </div>
+    <div id="intro">
 
-    <div class="nav">
-    <a href="index.html">HOME</a>
-    <a href="about.html">ABOUT</a>
-    <a href="wishlist.html">WISHLIST</a>
-    <a href="https://open.spotify.com/user/31uxnyjvx2ohhgcyrpaw2hbzdytm?si=BEuCjVR4QpWl4q8BDn3i1w" target="_blank">MUSIC</a>
-    <a href="files.html">FILES</a>
-</div>
+        <div class="intro-window">
 
-    <div class="content">
-
-        <div class="box">
-            <div class="box-title">
-                ★ WELCOME
+            <div class="intro-titlebar">
+                MILO'S WEBSITE
             </div>
 
-            <div class="box-content">
+            <div class="intro-content">
+
+                <h1>★ WELCOME ★</h1>
+
                 <p>
-                    Welcome to my website.
+                    You are about to enter Milo's website.
                 </p>
 
                 <p>
-                    This site is currently under construction.
-                    <span class="blink">█</span>
+                    Click the button below to continue.
                 </p>
 
-                <p>
-                    Here you will eventually find my wishlist,
-                    Spotify, Discord, files, info and other stuff.
+                <button id="enter-button">
+                    ENTER WEBSITE
+                </button>
+
+                <p class="small-text">
+                    ♪ Please turn your volume on ♪
                 </p>
+
             </div>
+
         </div>
 
-        <div class="columns">
+    </div>
+
+
+    <!-- =====================================
+         MUSIC
+         ===================================== -->
+
+    <audio id="background-music" loop>
+        <source src="DEINE-MP3-DATEI.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!-- =====================================
+         MAIN WEBSITE
+         ===================================== -->
+
+    <div class="website">
+
+        <div class="titlebar">
+            MILO'S WEBSITE
+            <span>_ □ X</span>
+        </div>
+
+        <div class="header">
+            <h1>★ MILO ★</h1>
+
+            <p>
+                Welcome to my little corner of the internet.
+            </p>
+        </div>
+
+        <div class="nav">
+
+            <a href="index.html">HOME</a>
+
+            <a href="about.html">ABOUT</a>
+
+            <a href="wishlist.html">WISHLIST</a>
+
+            <a href="DEIN-SPOTIFY-LINK" target="_blank">
+                MUSIC
+            </a>
+
+            <a href="files.html">
+                FILES
+            </a>
+
+        </div>
+
+        <div class="content">
 
             <div class="box">
+
                 <div class="box-title">
-                    ABOUT ME
+                    ★ WELCOME
                 </div>
 
                 <div class="box-content">
+
                     <p>
-                        Name: Milo
+                        Welcome to my website.
                     </p>
 
                     <p>
-                        Status:
-                        <span class="blink">ONLINE</span>
+                        This site is currently under construction.
+                        <span class="blink">█</span>
                     </p>
 
                     <p>
-                        Location: Internet
+                        Here you will eventually find my wishlist,
+                        Spotify, Discord, files, info and other stuff.
                     </p>
+
                 </div>
+
             </div>
 
-            <div class="box">
-                <div class="box-title">
-                    SYSTEM STATUS
-                </div>
 
-                <div class="box-content">
-                    <div class="status">
-                        SYSTEM: ONLINE<br>
-                        WEBSITE: ONLINE<br>
-                        MOOD: GOOD<br>
-                        MUSIC: PLAYING
+            <div class="columns">
+
+                <div class="box">
+
+                    <div class="box-title">
+                        ABOUT ME
                     </div>
+
+                    <div class="box-content">
+
+                        <p>
+                            Name: Milo
+                        </p>
+
+                        <p>
+                            Status:
+                            <span class="blink">ONLINE</span>
+                        </p>
+
+                        <p>
+                            Location: Internet
+                        </p>
+
+                    </div>
+
                 </div>
+
+
+                <div class="box">
+
+                    <div class="box-title">
+                        SYSTEM STATUS
+                    </div>
+
+                    <div class="box-content">
+
+                        <div class="status">
+                            SYSTEM: ONLINE<br>
+                            WEBSITE: ONLINE<br>
+                            MOOD: GOOD<br>
+                            MUSIC: PLAYING
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="box">
+
+                <div class="box-title">
+                    MY LINKS
+                </div>
+
+                <div class="box-content">
+
+                    <a href="#" target="_blank">
+                        Discord
+                    </a>
+
+                    <br>
+
+                    <a href="DEIN-SPOTIFY-LINK" target="_blank">
+                        Spotify
+                    </a>
+
+                    <br>
+
+                    <a href="#" target="_blank">
+                        YouTube
+                    </a>
+
+                    <br>
+
+                    <a href="#" target="_blank">
+                        Instagram
+                    </a>
+
+                </div>
+
             </div>
 
         </div>
 
-        <div class="box">
-            <div class="box-title">
-                MY LINKS
-            </div>
 
-            <div class="box-content">
-                <a href="#">Discord</a><br>
-                <a href="#">Spotify</a><br>
-                <a href="#">YouTube</a><br>
-                <a href="#">Instagram</a>
-            </div>
+        <div class="footer">
+
+            Best viewed at 1024x768<br>
+
+            Visitor Counter: 000001<br>
+
+            Last updated: 2026
+
         </div>
 
     </div>
 
-    <div class="footer">
-        Best viewed at 1024x768<br>
-        Visitor Counter: 000001<br>
-        Last updated: 2026
-    </div>
 
-</div>
-<script>
-    const enterButton = document.getElementById("enter-button");
-    const intro = document.getElementById("intro");
-    const music = document.getElementById("background-music");
+    <!-- =====================================
+         ENTER BUTTON SCRIPT
+         ===================================== -->
 
-    enterButton.addEventListener("click", function() {
-        music.play();
+    <script>
 
-        intro.style.display = "none";
-    });
-</script>
+        const enterButton =
+            document.getElementById("enter-button");
+
+        const intro =
+            document.getElementById("intro");
+
+        const music =
+            document.getElementById("background-music");
+
+
+        enterButton.addEventListener("click", function() {
+
+            music.play();
+
+            intro.style.display = "none";
+
+        });
+
+    </script>
+
+
 </body>
 </html>
