@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Milo's Files</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 30px 10px;
+            background: #008080;
+            font-family: "MS Sans Serif", Arial, sans-serif;
+            font-size: 13px;
+            color: #000000;
+        }
+
+        .window {
+            width: 760px;
+            max-width: 95%;
+            margin: 0 auto;
+            background: #c0c0c0;
+            border-top: 2px solid #ffffff;
+            border-left: 2px solid #ffffff;
+            border-right: 2px solid #000000;
+            border-bottom: 2px solid #000000;
+            box-shadow: 4px 4px 0 #000000;
+        }
+
+        .titlebar {
+            margin: 3px 3px 0 3px;
+            padding: 4px 6px;
+            background: #000080;
+            color: white;
+            font-weight: bold;
+        }
+
+        .titlebar-right {
+            float: right;
+        }
+
+        .menu {
+            padding: 5px 8px;
+            background: #c0c0c0;
+            border-bottom: 1px solid #808080;
+        }
+
+        .menu span {
+            margin-right: 18px;
+        }
+
+        .toolbar {
+            padding: 7px;
+            background: #c0c0c0;
+            border-bottom: 2px solid #808080;
+        }
+
+        .toolbar button {
+            font-family: "MS Sans Serif", Arial, sans-serif;
+            font-size: 12px;
+            padding: 3px 10px;
+            margin-right: 5px;
+            background: #c0c0c0;
+            border-top: 2px solid #ffffff;
+            border-left: 2px solid #ffffff;
+            border-right: 2px solid #404040;
+            border-bottom: 2px solid #404040;
+        }
+
+        .address {
+            margin: 7px;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+
+        .address-label {
+            font-weight: bold;
+        }
+
+        .address-bar {
+            flex: 1;
+            background: white;
+            border-top: 2px solid #404040;
+            border-left: 2px solid #404040;
+            border-right: 2px solid #ffffff;
+            border-bottom: 2px solid #ffffff;
+            padding: 3px 6px;
+            font-family: "Courier New", monospace;
+        }
+
+        .content {
+            margin: 7px;
+            min-height: 380px;
+            background: white;
+            border-top: 2px solid #404040;
+            border-left: 2px solid #404040;
+            border-right: 2px solid #ffffff;
+            border-bottom: 2px solid #ffffff;
+            padding: 15px;
+        }
+
+        .folder-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px 15px;
+        }
+
+        .folder {
+            display: block;
+            text-align: center;
+            color: #000000;
+            text-decoration: none;
+            padding: 8px;
+        }
+
+        .folder:hover {
+            background: #000080;
+            color: white;
+        }
+
+        .folder-icon {
+            font-size: 42px;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .folder-name {
+            display: block;
+        }
+
+        .statusbar {
+            margin: 0 3px 3px 3px;
+            padding: 5px 8px;
+            background: #c0c0c0;
+            border-top: 1px solid #808080;
+        }
+
+        @media (max-width: 600px) {
+            .folder-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="window">
+
+    <div class="titlebar">
+        📁 Milo's Files
+        <span class="titlebar-right">_ □ X</span>
+    </div>
+
+    <div class="menu">
+        <span>File</span>
+        <span>Edit</span>
+        <span>View</span>
+        <span>Help</span>
+    </div>
+
+    <div class="toolbar">
+        <button>← Back</button>
+        <button>→ Forward</button>
+        <button>↑ Up</button>
+    </div>
+
+    <div class="address">
+        <span class="address-label">Address:</span>
+
+        <div class="address-bar">
+            C:\Milo\Files
+        </div>
+    </div>
+
+    <div class="content">
+
+        <div class="folder-grid">
+
+            <a class="folder" href="#">
+                <span class="folder-icon">📁</span>
+                <span class="folder-name">Documents</span>
+            </a>
+
+            <a class="folder" href="#">
+                <span class="folder-icon">📁</span>
+                <span class="folder-name">Pictures</span>
+            </a>
+
+            <a class="folder" href="#">
+                <span class="folder-icon">📁</span>
+                <span class="folder-name">Music</span>
+            </a>
+
+            <a class="folder" href="#">
+                <span class="folder-icon">📁</span>
+                <span class="folder-name">Projects</span>
+            </a>
+
+            <a class="folder" href="#">
+                <span class="folder-icon">📁</span>
+                <span class="folder-name">Downloads</span>
+            </a>
+
+            <a class="folder" href="#">
+                <span class="folder-icon">📁</span>
+                <span class="folder-name">Random</span>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="statusbar">
+        6 objects
+    </div>
+
+</div>
+
+</body>
+</html>
