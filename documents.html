@@ -1,1 +1,129 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documents</title>
 
+    <style>
+        body {
+            margin: 0;
+            padding: 30px 10px;
+            background: #008080;
+            font-family: "MS Sans Serif", Arial, sans-serif;
+            font-size: 13px;
+            color: #000000;
+        }
+
+        .window {
+            width: 760px;
+            max-width: 95%;
+            margin: 0 auto;
+            background: #c0c0c0;
+            border-top: 2px solid #ffffff;
+            border-left: 2px solid #ffffff;
+            border-right: 2px solid #000000;
+            border-bottom: 2px solid #000000;
+            box-shadow: 4px 4px 0 #000000;
+        }
+
+        .titlebar {
+            margin: 3px 3px 0;
+            padding: 4px 6px;
+            background: #000080;
+            color: white;
+            font-weight: bold;
+        }
+
+        .titlebar-right {
+            float: right;
+        }
+
+        .toolbar {
+            padding: 7px;
+            border-bottom: 2px solid #808080;
+        }
+
+        .toolbar a {
+            display: inline-block;
+            padding: 3px 10px;
+            margin-right: 5px;
+            background: #c0c0c0;
+            color: #000000;
+            text-decoration: none;
+            border-top: 2px solid #ffffff;
+            border-left: 2px solid #ffffff;
+            border-right: 2px solid #404040;
+            border-bottom: 2px solid #404040;
+        }
+
+        .content {
+            margin: 7px;
+            min-height: 350px;
+            background: #ffffff;
+            border-top: 2px solid #404040;
+            border-left: 2px solid #404040;
+            border-right: 2px solid #ffffff;
+            border-bottom: 2px solid #ffffff;
+            padding: 15px;
+        }
+
+        .file {
+            display: inline-block;
+            width: 130px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .file:hover {
+            background: #000080;
+            color: white;
+        }
+
+        .file-icon {
+            display: block;
+            font-size: 40px;
+            margin-bottom: 5px;
+        }
+
+        .statusbar {
+            margin: 0 3px 3px;
+            padding: 5px 8px;
+            border-top: 1px solid #808080;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="window">
+
+    <div class="titlebar">
+        📁 Documents
+        <span class="titlebar-right">_ □ X</span>
+    </div>
+
+    <div class="toolbar">
+        <a href="files.html">← Back</a>
+    </div>
+
+    <div class="content">
+
+        <a class="file" href="#" target="_blank">
+            <span class="file-icon">📄</span>
+            My Document
+        </a>
+
+    </div>
+
+    <div class="statusbar">
+        1 object
+    </div>
+
+</div>
+
+</body>
+</html>
