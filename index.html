@@ -3,60 +3,267 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Milo's Website</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 30px 10px;
+            background: #8fa1b5;
+            color: #111111;
+            font-family: "MS Sans Serif", Arial, sans-serif;
+            font-size: 13px;
+        }
+
+        a {
+            color: #0000ee;
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: #551a8b;
+        }
+
+        .website {
+            width: 760px;
+            max-width: 95%;
+            margin: 0 auto;
+            background: #d4d0c8;
+            border: 2px solid #ffffff;
+            border-right-color: #404040;
+            border-bottom-color: #404040;
+            box-shadow: 4px 4px 0 #222222;
+        }
+
+        .titlebar {
+            background: #000080;
+            color: white;
+            padding: 5px 8px;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .titlebar span {
+            float: right;
+        }
+
+        .header {
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #808080;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-family: Georgia, serif;
+            font-size: 32px;
+        }
+
+        .header p {
+            margin: 8px 0 0;
+        }
+
+        .nav {
+            padding: 8px;
+            text-align: center;
+            background: #c0c0c0;
+            border-bottom: 2px solid #808080;
+        }
+
+        .nav a {
+            display: inline-block;
+            margin: 3px;
+            padding: 4px 10px;
+            background: #d4d0c8;
+            border: 2px solid #ffffff;
+            border-right-color: #404040;
+            border-bottom-color: #404040;
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .nav a:active {
+            border: 2px solid #404040;
+            border-right-color: #ffffff;
+            border-bottom-color: #ffffff;
+        }
+
+        .content {
+            padding: 15px;
+        }
+
+        .box {
+            margin-bottom: 15px;
+            background: #eeeeee;
+            border: 1px solid #555555;
+        }
+
+        .box-title {
+            padding: 5px 8px;
+            background: #000080;
+            color: white;
+            font-weight: bold;
+        }
+
+        .box-content {
+            padding: 12px;
+        }
+
+        .columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .status {
+            font-family: "Courier New", monospace;
+            background: #000000;
+            color: #00ff00;
+            padding: 10px;
+        }
+
+        .footer {
+            padding: 12px;
+            text-align: center;
+            font-size: 11px;
+            border-top: 2px solid #808080;
+        }
+
+        .blink {
+            animation: blink 1s steps(2, start) infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                visibility: hidden;
+            }
+        }
+
+        @media (max-width: 650px) {
+            .columns {
+                grid-template-columns: 1fr;
+            }
+
+            body {
+                padding: 10px 5px;
+            }
+
+            .header h1 {
+                font-size: 25px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <center>
+<div class="website">
 
-        <h1>★ MILO'S WEBSITE ★</h1>
+    <div class="titlebar">
+        MILO'S WEBSITE
+        <span>_ □ X</span>
+    </div>
 
-        <p>
-            <a href="#">HOME</a> |
-            <a href="#">ABOUT ME</a> |
-            <a href="#">WISHLIST</a> |
-            <a href="#">MUSIC</a> |
-            <a href="#">FILES</a>
-        </p>
+    <div class="header">
+        <h1>★ MILO ★</h1>
+        <p>Welcome to my little corner of the internet.</p>
+    </div>
 
-        <hr>
+    <div class="nav">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">WISHLIST</a>
+        <a href="#">MUSIC</a>
+        <a href="#">FILES</a>
+    </div>
 
-        <h2>WELCOME TO MY WEBSITE</h2>
+    <div class="content">
 
-        <p>
-            This is my little corner of the internet.
-        </p>
+        <div class="box">
+            <div class="box-title">
+                ★ WELCOME
+            </div>
 
-        <br>
+            <div class="box-content">
+                <p>
+                    Welcome to my website.
+                </p>
 
-        <h3>★ ABOUT ME ★</h3>
+                <p>
+                    This site is currently under construction.
+                    <span class="blink">█</span>
+                </p>
 
-        <p>
-            More information coming soon...
-        </p>
+                <p>
+                    Here you will eventually find my wishlist,
+                    Spotify, Discord, files, info and other stuff.
+                </p>
+            </div>
+        </div>
 
-        <br>
+        <div class="columns">
 
-        <h3>★ MY STUFF ★</h3>
+            <div class="box">
+                <div class="box-title">
+                    ABOUT ME
+                </div>
 
-        <p>
-            Wishlist • Spotify • Discord • Files • Info
-        </p>
+                <div class="box-content">
+                    <p>
+                        Name: Milo
+                    </p>
 
-        <br>
+                    <p>
+                        Status:
+                        <span class="blink">ONLINE</span>
+                    </p>
 
-        <hr>
+                    <p>
+                        Location: Internet
+                    </p>
+                </div>
+            </div>
 
-        <p>
-            Visitor Counter: 000001
-        </p>
+            <div class="box">
+                <div class="box-title">
+                    SYSTEM STATUS
+                </div>
 
-        <p>
-            Best viewed at 1024x768
-        </p>
+                <div class="box-content">
+                    <div class="status">
+                        SYSTEM: ONLINE<br>
+                        WEBSITE: ONLINE<br>
+                        MOOD: GOOD<br>
+                        MUSIC: PLAYING
+                    </div>
+                </div>
+            </div>
 
-    </center>
+        </div>
+
+        <div class="box">
+            <div class="box-title">
+                MY LINKS
+            </div>
+
+            <div class="box-content">
+                <a href="#">Discord</a><br>
+                <a href="#">Spotify</a><br>
+                <a href="#">YouTube</a><br>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Best viewed at 1024x768<br>
+        Visitor Counter: 000001<br>
+        Last updated: 2026
+    </div>
+
+</div>
 
 </body>
 </html>
