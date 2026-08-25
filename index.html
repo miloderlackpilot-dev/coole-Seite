@@ -7,6 +7,89 @@
     <title>Milo's Website</title>
 
     <style>
+       .fake-error {
+    position: fixed;
+
+    width: 330px;
+
+    background: #c0c0c0;
+
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+
+    box-shadow: 4px 4px 0 #000000;
+
+    z-index: 5000;
+
+    display: none;
+}
+
+.error-titlebar {
+    margin: 3px 3px 0;
+
+    padding: 4px 6px;
+
+    background: #000080;
+    color: white;
+
+    font-weight: bold;
+}
+
+.error-titlebar span {
+    float: right;
+}
+
+.error-content {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 20px;
+}
+
+.error-icon {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.error-message p {
+    margin: 5px 0;
+}
+
+.error-buttons {
+    padding: 0 15px 15px;
+
+    text-align: right;
+}
+
+.error-buttons button {
+    min-width: 70px;
+
+    padding: 4px 12px;
+
+    font-family: "MS Sans Serif", Arial, sans-serif;
+    font-size: 12px;
+
+    background: #c0c0c0;
+
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #404040;
+    border-bottom: 2px solid #404040;
+
+    cursor: pointer;
+}
+
+.error-buttons button:active {
+    border-top: 2px solid #404040;
+    border-left: 2px solid #404040;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
         body {
             margin: 0;
             padding: 30px 10px;
@@ -330,7 +413,38 @@
         </div>
 
         <div class="content">
+            <div id="error-window-1" class="fake-error">
 
+    <div class="error-titlebar">
+        ⚠ MILO.EXE
+        <span>✕</span>
+    </div>
+
+    <div class="error-content">
+
+        <div class="error-icon">
+            ⚠
+        </div>
+
+        <div class="error-message">
+            <p>
+                An unexpected error has occurred.
+            </p>
+
+            <p>
+                Error code: 0x00001337
+            </p>
+        </div>
+
+    </div>
+
+    <div class="error-buttons">
+        <button onclick="closeError('error-window-1')">
+            OK
+        </button>
+    </div>
+
+</div>
             <div class="box">
 
                 <div class="box-title">
@@ -483,7 +597,40 @@
         });
 
     </script>
+<script>
 
+    function closeError(id) {
+        document.getElementById(id).style.display = "none";
+    }
+
+    function showError() {
+
+        const error =
+            document.getElementById("error-window-1");
+
+        const maxX =
+            window.innerWidth - error.offsetWidth - 20;
+
+        const maxY =
+            window.innerHeight - error.offsetHeight - 20;
+
+        const randomX =
+            Math.floor(Math.random() * Math.max(maxX, 20));
+
+        const randomY =
+            Math.floor(Math.random() * Math.max(maxY, 20));
+
+        error.style.left = randomX + "px";
+        error.style.top = randomY + "px";
+
+        error.style.display = "block";
+    }
+
+    setTimeout(function() {
+        showError();
+    }, 5000);
+
+</script>
 
 </body>
 </html>
